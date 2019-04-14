@@ -1,0 +1,5 @@
+---
+go_release: "go1.12.4.linux-amd64.tar.gz"
+go_checksum: "sha256:d7d1f1f88ddfe55840712dc1747f37a790cbcaa448f6c9cf51bbe10aa65442f5"
+go_binary_url: "https://dl.google.com/go/{{ go_release }}"
+

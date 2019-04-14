@@ -1,0 +1,16 @@
+---
+# Update CentOS
+- include_tasks: update_for_redhat.yml
+  when: ansible_os_family == 'RedHat'
+
+# Download Golang Binary Release
+- include_tasks: download_binary_release.yml
+
+# Extract Golang Binary Release
+- include_tasks: extract_files.yml
+
+# Remove compressed file
+- include_tasks: remove_compressed_file.yml
+
+# Copy scripts to /etc/profile.d
+- include_tasks: copy_scripts.yml

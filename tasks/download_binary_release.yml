@@ -1,0 +1,7 @@
+---
+- name: Download Binary Release
+  become: true
+  get_url:
+    url: "{{ go_binary_url }}"
+    dest: /tmp/{{ go_release }}
+    checksum: "{{ go_checksum }}"

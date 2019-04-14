@@ -1,0 +1,7 @@
+---
+- name: Extract {{ go_release }} into /usr/local
+  become: true
+  unarchive:
+    src: /tmp/{{ go_release }}
+    dest: /usr/local
+    remote_src: yes

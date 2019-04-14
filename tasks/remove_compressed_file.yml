@@ -1,0 +1,6 @@
+---
+- name: Remove compressed file 
+  become: true
+  file:  
+    path: /tmp/{{ go_release }}
+    state: absent

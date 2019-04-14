@@ -1,0 +1,14 @@
+---
+- name: Copy golang_bin.sh to /etc/profile.d
+  become: true
+  copy:
+    src: ../files/golang_bin.sh
+    dest: /etc/profile.d
+    mode: u=rwx,g=rx,o=rx
+
+- name: Copy golang_path.sh to /etc/profile.d
+  become: true
+  copy:
+    src: ../files/golang_path.sh
+    dest: /etc/profile.d
+    mode: u=rwx,g=rx,o=rx
